@@ -1,0 +1,717 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F155D0BBE817AA3DF3CCDBA41807E06 /* Pods-YoutubeDownloader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E4EBD5156BBC0A70FDA4D6912241DE9C /* Pods-YoutubeDownloader-dummy.m */; };
+		33B0C9CA5DC96801DBD95E97948D91F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		42D780D81E4AA5C8DEB4163AB5433B31 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		4714EB66301C35A1F728FC9630AEA509 /* Youtube.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E914E2D4E45E5E1E572C7867A4C2248 /* Youtube.swift */; };
+		4916CAD2588512FBD075A8A77DE88E6E /* YoutubeSourceParserKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B0C4789B2582A3B0E3D305E2E21F780 /* YoutubeSourceParserKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D9C503A453280519CD139DC0CB061D7 /* MZDownloadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD568F55A3100F3A6E4B68B9CBE0B1E /* MZDownloadModel.swift */; };
+		6B23CA2368F91E8E525DFD364DBA984F /* MZDownloadManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 27F09855C143FBD9FD711A1FFC42F4F3 /* MZDownloadManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EACC66C1FCC32753E66DB168BB0CB11 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		9EF0163015B75FC28563FC98B23BFF5A /* YoutubeSourceParserKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4E28F3A362345FEDB4EC67AA3E43EE /* YoutubeSourceParserKit-dummy.m */; };
+		A6E507B109F1AD837E922C16F7EF0A4A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
+		B0E7E80472D83C53EACAF99B190E85E3 /* Pods-YoutubeDownloader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 81DB23D7C3BD6CC471DCAD06FECC33A7 /* Pods-YoutubeDownloader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE498551EED66A842AF9858625BFF891 /* MZDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4535570D061D9107A3827754D9A55178 /* MZDownloadManager.swift */; };
+		D15642A156CE85836BD45E08F8AAF0C6 /* MZDownloadManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F9342E56C2FA07795EFCE8BBB55928EA /* MZDownloadManager-dummy.m */; };
+		EF1E0C954D6944F055F7B4343E3A62A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
+		F2457F955DC0C8B8E356C5A4CB109D0E /* MZUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBA6DE2807B058C88E4D584E6D40870 /* MZUtility.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		64C7F294CF22906EDA9B430E4CC32A8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C4B871AB58F85127F4F8E59D29B6551;
+			remoteInfo = MZDownloadManager;
+		};
+		98D847D3A5B58E910FA5F2A7EBF6FABB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA5F81F9093E248E9F6A4AD0AD935C96;
+			remoteInfo = YoutubeSourceParserKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01A65759178424EC7C8040031AB03A88 /* YoutubeSourceParserKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YoutubeSourceParserKit.framework; path = YoutubeSourceParserKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		02CD1CB60191B16DB900428E98F9A235 /* YoutubeSourceParserKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YoutubeSourceParserKit-prefix.pch"; sourceTree = "<group>"; };
+		108FC706F58D320B5F26C69ECFD59145 /* MZDownloadManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MZDownloadManager.modulemap; sourceTree = "<group>"; };
+		2141023F789E50EF09B478DB0FDFA2FE /* YoutubeSourceParserKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = YoutubeSourceParserKit.modulemap; sourceTree = "<group>"; };
+		27F09855C143FBD9FD711A1FFC42F4F3 /* MZDownloadManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MZDownloadManager-umbrella.h"; sourceTree = "<group>"; };
+		2805FDD2E9CE0DAAB01D7554735BC0A8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41B441D18F19C948E3F47DA7B7E86140 /* Pods-YoutubeDownloader-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YoutubeDownloader-acknowledgements.plist"; sourceTree = "<group>"; };
+		449D32DA8B4931D37A93715B03D58920 /* Pods-YoutubeDownloader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YoutubeDownloader.debug.xcconfig"; sourceTree = "<group>"; };
+		4535570D061D9107A3827754D9A55178 /* MZDownloadManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MZDownloadManager.swift; path = MZDownloadManager/Classes/MZDownloadManager.swift; sourceTree = "<group>"; };
+		46E81C618D325B4191F9348F8CA92279 /* Pods-YoutubeDownloader-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YoutubeDownloader-frameworks.sh"; sourceTree = "<group>"; };
+		53B7424532FC0CEBE5D7D53E27141289 /* Pods_YoutubeDownloader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YoutubeDownloader.framework; path = "Pods-YoutubeDownloader.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E914E2D4E45E5E1E572C7867A4C2248 /* Youtube.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Youtube.swift; path = YoutubeSourceParserKit/Youtube.swift; sourceTree = "<group>"; };
+		616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6B0C4789B2582A3B0E3D305E2E21F780 /* YoutubeSourceParserKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YoutubeSourceParserKit-umbrella.h"; sourceTree = "<group>"; };
+		6F42D05AC789856AFA807B6C5FCC0D06 /* MZDownloadManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MZDownloadManager-prefix.pch"; sourceTree = "<group>"; };
+		74F545A6C0F230E708C0E42130E105F7 /* MZDownloadManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MZDownloadManager.framework; path = MZDownloadManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7936EC1BBF1FB92AEF0A62179C4779CE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		81DB23D7C3BD6CC471DCAD06FECC33A7 /* Pods-YoutubeDownloader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YoutubeDownloader-umbrella.h"; sourceTree = "<group>"; };
+		8AD568F55A3100F3A6E4B68B9CBE0B1E /* MZDownloadModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MZDownloadModel.swift; path = MZDownloadManager/Classes/MZDownloadModel.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94C10E38F3D3BD5239FD927BF14E1CF6 /* YoutubeSourceParserKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YoutubeSourceParserKit.xcconfig; sourceTree = "<group>"; };
+		9FED330C22CA99371BE2F1FAC1760CDC /* Pods-YoutubeDownloader-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YoutubeDownloader-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B100FDB3F8744213E72EE74601298FBD /* Pods-YoutubeDownloader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YoutubeDownloader.release.xcconfig"; sourceTree = "<group>"; };
+		BEBA6DE2807B058C88E4D584E6D40870 /* MZUtility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MZUtility.swift; path = MZDownloadManager/Classes/MZUtility.swift; sourceTree = "<group>"; };
+		C47343DDFFF87EC3D5FC8F0F852745F9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF4E28F3A362345FEDB4EC67AA3E43EE /* YoutubeSourceParserKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YoutubeSourceParserKit-dummy.m"; sourceTree = "<group>"; };
+		DC787D7517FA8DD1D75378F129337E92 /* Pods-YoutubeDownloader-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YoutubeDownloader-resources.sh"; sourceTree = "<group>"; };
+		E4EBD5156BBC0A70FDA4D6912241DE9C /* Pods-YoutubeDownloader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YoutubeDownloader-dummy.m"; sourceTree = "<group>"; };
+		EFA8EECE7B5C57DAC92E638488B9CBB9 /* Pods-YoutubeDownloader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-YoutubeDownloader.modulemap"; sourceTree = "<group>"; };
+		F4C6716A84E0C95A37806F640AD1C68E /* MZDownloadManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MZDownloadManager.xcconfig; sourceTree = "<group>"; };
+		F9342E56C2FA07795EFCE8BBB55928EA /* MZDownloadManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MZDownloadManager-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14EA5F09682A6AEB7FBF7735278E80E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EACC66C1FCC32753E66DB168BB0CB11 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75C71A34E16946DD616F21C8CFB037C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33B0C9CA5DC96801DBD95E97948D91F6 /* Foundation.framework in Frameworks */,
+				EF1E0C954D6944F055F7B4343E3A62A6 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E85B1D017D861BC93671D47594DB5CAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42D780D81E4AA5C8DEB4163AB5433B31 /* Foundation.framework in Frameworks */,
+				A6E507B109F1AD837E922C16F7EF0A4A /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00C73E220C19AE03CEB3DC8A4D5EB2B1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C47343DDFFF87EC3D5FC8F0F852745F9 /* Info.plist */,
+				108FC706F58D320B5F26C69ECFD59145 /* MZDownloadManager.modulemap */,
+				F4C6716A84E0C95A37806F640AD1C68E /* MZDownloadManager.xcconfig */,
+				F9342E56C2FA07795EFCE8BBB55928EA /* MZDownloadManager-dummy.m */,
+				6F42D05AC789856AFA807B6C5FCC0D06 /* MZDownloadManager-prefix.pch */,
+				27F09855C143FBD9FD711A1FFC42F4F3 /* MZDownloadManager-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MZDownloadManager";
+			sourceTree = "<group>";
+		};
+		01B50C7C84A41E22168B7E2D54A48BF1 /* MZDownloadManager */ = {
+			isa = PBXGroup;
+			children = (
+				4535570D061D9107A3827754D9A55178 /* MZDownloadManager.swift */,
+				8AD568F55A3100F3A6E4B68B9CBE0B1E /* MZDownloadModel.swift */,
+				BEBA6DE2807B058C88E4D584E6D40870 /* MZUtility.swift */,
+				00C73E220C19AE03CEB3DC8A4D5EB2B1 /* Support Files */,
+			);
+			name = MZDownloadManager;
+			path = MZDownloadManager;
+			sourceTree = "<group>";
+		};
+		1ECF6ABF5BA4A4455DE2BBA901E053DA /* Pods-YoutubeDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				7936EC1BBF1FB92AEF0A62179C4779CE /* Info.plist */,
+				EFA8EECE7B5C57DAC92E638488B9CBB9 /* Pods-YoutubeDownloader.modulemap */,
+				9FED330C22CA99371BE2F1FAC1760CDC /* Pods-YoutubeDownloader-acknowledgements.markdown */,
+				41B441D18F19C948E3F47DA7B7E86140 /* Pods-YoutubeDownloader-acknowledgements.plist */,
+				E4EBD5156BBC0A70FDA4D6912241DE9C /* Pods-YoutubeDownloader-dummy.m */,
+				46E81C618D325B4191F9348F8CA92279 /* Pods-YoutubeDownloader-frameworks.sh */,
+				DC787D7517FA8DD1D75378F129337E92 /* Pods-YoutubeDownloader-resources.sh */,
+				81DB23D7C3BD6CC471DCAD06FECC33A7 /* Pods-YoutubeDownloader-umbrella.h */,
+				449D32DA8B4931D37A93715B03D58920 /* Pods-YoutubeDownloader.debug.xcconfig */,
+				B100FDB3F8744213E72EE74601298FBD /* Pods-YoutubeDownloader.release.xcconfig */,
+			);
+			name = "Pods-YoutubeDownloader";
+			path = "Target Support Files/Pods-YoutubeDownloader";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6EE98446B568159EE277B68FD442AF0 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		449861343564D1F78ABA21C85DF5FAA6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2805FDD2E9CE0DAAB01D7554735BC0A8 /* Info.plist */,
+				2141023F789E50EF09B478DB0FDFA2FE /* YoutubeSourceParserKit.modulemap */,
+				94C10E38F3D3BD5239FD927BF14E1CF6 /* YoutubeSourceParserKit.xcconfig */,
+				CF4E28F3A362345FEDB4EC67AA3E43EE /* YoutubeSourceParserKit-dummy.m */,
+				02CD1CB60191B16DB900428E98F9A235 /* YoutubeSourceParserKit-prefix.pch */,
+				6B0C4789B2582A3B0E3D305E2E21F780 /* YoutubeSourceParserKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/YoutubeSourceParserKit";
+			sourceTree = "<group>";
+		};
+		4992DF2AD1BF39B4F9D3996031044350 /* YoutubeSourceParserKit */ = {
+			isa = PBXGroup;
+			children = (
+				5E914E2D4E45E5E1E572C7867A4C2248 /* Youtube.swift */,
+				449861343564D1F78ABA21C85DF5FAA6 /* Support Files */,
+			);
+			name = YoutubeSourceParserKit;
+			path = YoutubeSourceParserKit;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				E582CE616E05AE8628F2AE0FE681A880 /* Pods */,
+				9D466B81AA59DF386F7F49439249C3FE /* Products */,
+				D34484763671E5F413CAA42853725350 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9D466B81AA59DF386F7F49439249C3FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74F545A6C0F230E708C0E42130E105F7 /* MZDownloadManager.framework */,
+				53B7424532FC0CEBE5D7D53E27141289 /* Pods_YoutubeDownloader.framework */,
+				01A65759178424EC7C8040031AB03A88 /* YoutubeSourceParserKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D34484763671E5F413CAA42853725350 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1ECF6ABF5BA4A4455DE2BBA901E053DA /* Pods-YoutubeDownloader */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		E582CE616E05AE8628F2AE0FE681A880 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				01B50C7C84A41E22168B7E2D54A48BF1 /* MZDownloadManager */,
+				4992DF2AD1BF39B4F9D3996031044350 /* YoutubeSourceParserKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E6EE98446B568159EE277B68FD442AF0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */,
+				7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		37413F4790C8B17A1B814F878360C667 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B23CA2368F91E8E525DFD364DBA984F /* MZDownloadManager-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75E6750B554EECCA58DC9D7C7EA825A0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4916CAD2588512FBD075A8A77DE88E6E /* YoutubeSourceParserKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E46325BFDD69DCAF114ADCF16A2518A9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0E7E80472D83C53EACAF99B190E85E3 /* Pods-YoutubeDownloader-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		04944C20A246B197A9A1C0E77B8BB5DD /* Pods-YoutubeDownloader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DCF0CE44A73B6F4B3777506E78E6D19 /* Build configuration list for PBXNativeTarget "Pods-YoutubeDownloader" */;
+			buildPhases = (
+				82E7CA0E9966B322F05B99AC0F720F6D /* Sources */,
+				14EA5F09682A6AEB7FBF7735278E80E3 /* Frameworks */,
+				E46325BFDD69DCAF114ADCF16A2518A9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				409BE78801026E8B7A5CD6FB2D75416C /* PBXTargetDependency */,
+				974B9D08D3FC290B4559C117EE14EC3D /* PBXTargetDependency */,
+			);
+			name = "Pods-YoutubeDownloader";
+			productName = "Pods-YoutubeDownloader";
+			productReference = 53B7424532FC0CEBE5D7D53E27141289 /* Pods_YoutubeDownloader.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8C4B871AB58F85127F4F8E59D29B6551 /* MZDownloadManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAADDE3E1BFF549AE5985395BF667DD1 /* Build configuration list for PBXNativeTarget "MZDownloadManager" */;
+			buildPhases = (
+				730C0189435ABA717840948E2A0B7C9A /* Sources */,
+				75C71A34E16946DD616F21C8CFB037C8 /* Frameworks */,
+				37413F4790C8B17A1B814F878360C667 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MZDownloadManager;
+			productName = MZDownloadManager;
+			productReference = 74F545A6C0F230E708C0E42130E105F7 /* MZDownloadManager.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CA5F81F9093E248E9F6A4AD0AD935C96 /* YoutubeSourceParserKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E2FBA19F28D6C71595E805F7DCCB339 /* Build configuration list for PBXNativeTarget "YoutubeSourceParserKit" */;
+			buildPhases = (
+				E32F41EAC2AF55344245AD4139313B25 /* Sources */,
+				E85B1D017D861BC93671D47594DB5CAE /* Frameworks */,
+				75E6750B554EECCA58DC9D7C7EA825A0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YoutubeSourceParserKit;
+			productName = YoutubeSourceParserKit;
+			productReference = 01A65759178424EC7C8040031AB03A88 /* YoutubeSourceParserKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 9D466B81AA59DF386F7F49439249C3FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C4B871AB58F85127F4F8E59D29B6551 /* MZDownloadManager */,
+				04944C20A246B197A9A1C0E77B8BB5DD /* Pods-YoutubeDownloader */,
+				CA5F81F9093E248E9F6A4AD0AD935C96 /* YoutubeSourceParserKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		730C0189435ABA717840948E2A0B7C9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D15642A156CE85836BD45E08F8AAF0C6 /* MZDownloadManager-dummy.m in Sources */,
+				CE498551EED66A842AF9858625BFF891 /* MZDownloadManager.swift in Sources */,
+				5D9C503A453280519CD139DC0CB061D7 /* MZDownloadModel.swift in Sources */,
+				F2457F955DC0C8B8E356C5A4CB109D0E /* MZUtility.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82E7CA0E9966B322F05B99AC0F720F6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F155D0BBE817AA3DF3CCDBA41807E06 /* Pods-YoutubeDownloader-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E32F41EAC2AF55344245AD4139313B25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4714EB66301C35A1F728FC9630AEA509 /* Youtube.swift in Sources */,
+				9EF0163015B75FC28563FC98B23BFF5A /* YoutubeSourceParserKit-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		409BE78801026E8B7A5CD6FB2D75416C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MZDownloadManager;
+			target = 8C4B871AB58F85127F4F8E59D29B6551 /* MZDownloadManager */;
+			targetProxy = 64C7F294CF22906EDA9B430E4CC32A8F /* PBXContainerItemProxy */;
+		};
+		974B9D08D3FC290B4559C117EE14EC3D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YoutubeSourceParserKit;
+			target = CA5F81F9093E248E9F6A4AD0AD935C96 /* YoutubeSourceParserKit */;
+			targetProxy = 98D847D3A5B58E910FA5F2A7EBF6FABB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0FE6968F2A44FDF6C8C1E8BE1732E343 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4C6716A84E0C95A37806F640AD1C68E /* MZDownloadManager.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MZDownloadManager/MZDownloadManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MZDownloadManager/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MZDownloadManager/MZDownloadManager.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MZDownloadManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5BF6D5AA162F410CDD99ED0164092210 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4C6716A84E0C95A37806F640AD1C68E /* MZDownloadManager.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MZDownloadManager/MZDownloadManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MZDownloadManager/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MZDownloadManager/MZDownloadManager.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MZDownloadManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		673254EEAF0B5BF4596080C749645884 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		767C3433C75450847CA8784B1DAE6517 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94C10E38F3D3BD5239FD927BF14E1CF6 /* YoutubeSourceParserKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/YoutubeSourceParserKit/YoutubeSourceParserKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YoutubeSourceParserKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YoutubeSourceParserKit/YoutubeSourceParserKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = YoutubeSourceParserKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B04C0A692EC0469C80BF590C6FEAD300 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94C10E38F3D3BD5239FD927BF14E1CF6 /* YoutubeSourceParserKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/YoutubeSourceParserKit/YoutubeSourceParserKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YoutubeSourceParserKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YoutubeSourceParserKit/YoutubeSourceParserKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = YoutubeSourceParserKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		EA93C1C4AF43D3ACCF5B856DD7B88E13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B100FDB3F8744213E72EE74601298FBD /* Pods-YoutubeDownloader.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-YoutubeDownloader/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YoutubeDownloader/Pods-YoutubeDownloader.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_YoutubeDownloader;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F77C4B99CC8393D765C6A13393E9216F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 449D32DA8B4931D37A93715B03D58920 /* Pods-YoutubeDownloader.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-YoutubeDownloader/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YoutubeDownloader/Pods-YoutubeDownloader.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_YoutubeDownloader;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */,
+				673254EEAF0B5BF4596080C749645884 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E2FBA19F28D6C71595E805F7DCCB339 /* Build configuration list for PBXNativeTarget "YoutubeSourceParserKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				767C3433C75450847CA8784B1DAE6517 /* Debug */,
+				B04C0A692EC0469C80BF590C6FEAD300 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DCF0CE44A73B6F4B3777506E78E6D19 /* Build configuration list for PBXNativeTarget "Pods-YoutubeDownloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F77C4B99CC8393D765C6A13393E9216F /* Debug */,
+				EA93C1C4AF43D3ACCF5B856DD7B88E13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAADDE3E1BFF549AE5985395BF667DD1 /* Build configuration list for PBXNativeTarget "MZDownloadManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FE6968F2A44FDF6C8C1E8BE1732E343 /* Debug */,
+				5BF6D5AA162F410CDD99ED0164092210 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

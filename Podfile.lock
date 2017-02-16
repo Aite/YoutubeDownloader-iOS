@@ -1,0 +1,25 @@
+PODS:
+  - MZDownloadManager (3.2)
+  - YoutubeSourceParserKit (0.2.4)
+
+DEPENDENCIES:
+  - MZDownloadManager
+  - YoutubeSourceParserKit (from `https://github.com/lennet/YoutubeSourceParserKit`, branch `master`)
+
+EXTERNAL SOURCES:
+  YoutubeSourceParserKit:
+    :branch: master
+    :git: https://github.com/lennet/YoutubeSourceParserKit
+
+CHECKOUT OPTIONS:
+  YoutubeSourceParserKit:
+    :commit: 98f3bcf9886c20eefd82249a6cfbb3068ad86b80
+    :git: https://github.com/lennet/YoutubeSourceParserKit
+
+SPEC CHECKSUMS:
+  MZDownloadManager: 463f78e00530f3661a5adea649c1801747cc6165
+  YoutubeSourceParserKit: d1506222a62718ed41f18ab52ebbc1b1d9ecabcc
+
+PODFILE CHECKSUM: db756b558600403b511f52cc5582d0728385c5b2
+
+COCOAPODS: 1.1.1

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="YoutubeDownloader" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="http://www.youtube.com/watch?v=swZJwZeMesk" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AHq-n9-WtB">
+                                <rect key="frame" x="16" y="20" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RIh-a4-pIY">
+                                <rect key="frame" x="152.5" y="58" width="69" height="30"/>
+                                <state key="normal" title="Download"/>
+                                <connections>
+                                    <action selector="download:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c4D-d6-zI3"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vH5-Gg-BIG">
+                                <rect key="frame" x="16" y="96" width="343" height="571"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="downloaded" textLabel="n09-jv-AIg" style="IBUITableViewCellStyleDefault" id="WrF-T3-h64">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WrF-T3-h64" id="ZTQ-33-YKW">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="n09-jv-AIg">
+                                                    <rect key="frame" x="15" y="0.0" width="313" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="downloading" rowHeight="163" id="A5D-tg-Cds" customClass="DownloadTableViewCell" customModule="YoutubeDownloader" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="72" width="343" height="163"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="A5D-tg-Cds" id="DjB-ch-p8I">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="162"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDA-81-2hJ">
+                                                    <rect key="frame" x="8" y="8" width="327" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="WMa-5r-XEJ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jU7-RU-vU5">
+                                                    <rect key="frame" x="8" y="28" width="327" height="113.5"/>
+                                                    <string key="text">File Size: Calculating...
+Downloaded: Calculating...
+Speed: Calculating...
+Time Left: Calculating...
+Status: Unknown</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="dIZ-hI-LRQ">
+                                                    <rect key="frame" x="8" y="146.5" width="327" height="2"/>
+                                                </progressView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="dIZ-hI-LRQ" firstAttribute="leading" secondItem="DjB-ch-p8I" secondAttribute="leadingMargin" id="0CR-vd-p9y"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="dIZ-hI-LRQ" secondAttribute="bottom" constant="6" id="6P2-Yf-BDn"/>
+                                                <constraint firstItem="NDA-81-2hJ" firstAttribute="leading" secondItem="DjB-ch-p8I" secondAttribute="leadingMargin" id="7wE-kM-BBM"/>
+                                                <constraint firstItem="dIZ-hI-LRQ" firstAttribute="trailing" secondItem="DjB-ch-p8I" secondAttribute="trailingMargin" id="EAR-ED-SCO"/>
+                                                <constraint firstItem="jU7-RU-vU5" firstAttribute="leading" secondItem="DjB-ch-p8I" secondAttribute="leadingMargin" id="K1G-he-ZRP"/>
+                                                <constraint firstItem="NDA-81-2hJ" firstAttribute="trailing" secondItem="DjB-ch-p8I" secondAttribute="trailingMargin" id="dld-8T-4UE"/>
+                                                <constraint firstItem="dIZ-hI-LRQ" firstAttribute="top" secondItem="jU7-RU-vU5" secondAttribute="bottom" constant="5" id="ffK-Sf-h9m"/>
+                                                <constraint firstItem="jU7-RU-vU5" firstAttribute="top" secondItem="NDA-81-2hJ" secondAttribute="bottom" id="jVT-yB-6gK"/>
+                                                <constraint firstItem="NDA-81-2hJ" firstAttribute="top" secondItem="DjB-ch-p8I" secondAttribute="topMargin" id="rLc-mt-qEH"/>
+                                                <constraint firstItem="jU7-RU-vU5" firstAttribute="trailing" secondItem="DjB-ch-p8I" secondAttribute="trailingMargin" id="zUY-sg-66I"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lblDetails" destination="jU7-RU-vU5" id="cxq-9e-Fcm"/>
+                                            <outlet property="lblTitle" destination="NDA-81-2hJ" id="WfK-yf-JBz"/>
+                                            <outlet property="progressDownload" destination="dIZ-hI-LRQ" id="Jt3-IE-y6i"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="TsY-7T-mpq"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="HS3-Oo-R3Y"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AHq-n9-WtB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5g0-rS-LTh"/>
+                            <constraint firstItem="vH5-Gg-BIG" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Ng1-Yz-xll"/>
+                            <constraint firstItem="RIh-a4-pIY" firstAttribute="top" secondItem="AHq-n9-WtB" secondAttribute="bottom" constant="8" id="QUM-iL-nkI"/>
+                            <constraint firstItem="vH5-Gg-BIG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ZN6-nZ-E4j"/>
+                            <constraint firstItem="AHq-n9-WtB" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="nZq-6T-ZSx"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vH5-Gg-BIG" secondAttribute="bottom" id="pGv-11-e4E"/>
+                            <constraint firstItem="AHq-n9-WtB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="pZ9-6g-Vaf"/>
+                            <constraint firstItem="vH5-Gg-BIG" firstAttribute="top" secondItem="RIh-a4-pIY" secondAttribute="bottom" constant="8" id="qLN-sP-Gwp"/>
+                            <constraint firstItem="RIh-a4-pIY" firstAttribute="centerX" secondItem="AHq-n9-WtB" secondAttribute="centerX" id="qeY-fe-gFV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="downloadsTableView" destination="vH5-Gg-BIG" id="o8c-EG-MX9"/>
+                        <outlet property="urlTextField" destination="AHq-n9-WtB" id="ZcB-GK-dNA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
