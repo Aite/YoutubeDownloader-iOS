@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     
     var selectedIndexPath : IndexPath!
     var downloadedFilesArray : [String] = []
+    var documentInteractionController : UIDocumentInteractionController?
     
     lazy var downloadManager: MZDownloadManager = { [unowned self] in
         let sessionIdentifer: String = "com.iosDevelopment.MZDownloadManager.BackgroundSession"
@@ -40,7 +41,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         do {
-            let contentOfDir: [String] = try FileManager.default.contentsOfDirectory(atPath: MZUtility.baseFilePath as String)
+            let contentOfDir: [String] = try FileManager.default.contentsOfDirectory(atPath: MZUtility.baseFilePath)
             downloadedFilesArray.append(contentsOf: contentOfDir)
             
             let index = downloadedFilesArray.index(of: ".DS_Store")
@@ -86,11 +87,12 @@ class ViewController: UIViewController {
 //                        if let urlData = try? Data(contentsOf: url) {
                         
                             let documentsPath = StorageManager.default.documentsPath
+                            let fileName = "\(videoTitle).mp4"
 
-                            let filePath="\(documentsPath)/\(videoTitle).mp4";
+                            let filePath="\(documentsPath)/\(fileName)";
                             
                             //saving is done on main thread
-                            self.downloadManager.addDownloadTask(videoTitle, fileURL: videoURLString, destinationPath: filePath)
+                            self.downloadManager.addDownloadTask(fileName, fileURL: videoURLString, destinationPath: filePath)
 
 //                            DispatchQueue.main.async(execute: { () -> Void in
 //                                if StorageManager.default.writeFileAtPath(filePath, content: urlData) {
@@ -345,9 +347,9 @@ extension ViewController: UIDocumentInteractionControllerDelegate {
             let fileName : NSString = downloadedFilesArray[(indexPath as NSIndexPath).row] as NSString
             let fileURL  : URL = URL(fileURLWithPath: (MZUtility.baseFilePath as NSString).appendingPathComponent(fileName as String))
 
-            let popup = UIDocumentInteractionController(url: fileURL)
-            popup.delegate = self
-            popup.presentOpenInMenu(from: view.bounds, in: view, animated: true)
+            documentInteractionController = UIDocumentInteractionController(url: fileURL)
+            documentInteractionController?.delegate = self
+            documentInteractionController?.presentOpenInMenu(from: view.bounds, in: view, animated: true)
         }
     }
     
@@ -416,6 +418,7 @@ extension ViewController: MZDownloadManagerDelegate {
         }
         let fileName = MZUtility.getUniqueFileNameWithPath((myDownloadPath as NSString).appendingPathComponent(downloadModel.fileName as String) as NSString)
         let path =  myDownloadPath + "/" + (fileName as String)
+//        let path="\(myDownloadPath)/\(fileName).mp4";
         try! FileManager.default.moveItem(at: location, to: URL(fileURLWithPath: path))
         debugPrint("Default folder path: \(myDownloadPath)")
     }
