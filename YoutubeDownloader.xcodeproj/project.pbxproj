@@ -347,6 +347,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2C47F3CC8306DB992ACE7586 /* Pods-YoutubeDownloader.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = A58F9C5DHB;
 				INFOPLIST_FILE = YoutubeDownloader/Info.plist;
@@ -361,6 +362,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4CABDF845E2784944C12F561 /* Pods-YoutubeDownloader.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = A58F9C5DHB;
 				INFOPLIST_FILE = YoutubeDownloader/Info.plist;
